@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Random Number Guess Game
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    
+      <ion-item>
+        <ion-label floating>Guess a number between 1-10</ion-label>
+        <ion-input type="number"min="1" max="10" [value]="myGuessInput" [(ngModel)]="myGuessInput" required ></ion-input>
+      </ion-item>
+    
+    </ion-list>
+    <button ion-button block (click)="guessNumber()" >Guess!</button>
+    
+</ion-content>
